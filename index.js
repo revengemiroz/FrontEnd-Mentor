@@ -13,7 +13,7 @@ const display = () => {
         const CardHtml = `
          <div class='card'>
             <a href="/${project.name}/index.html">
-            <img src='//${project.name}/design/desktop-preview.jpg'></img>
+            <img src='/${project.name}/design/desktop-preview.jpg'></img>
             ${project.name}
             </a>
           </div>`
