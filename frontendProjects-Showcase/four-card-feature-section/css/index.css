@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  font-family: 'Poppins';
+  background: #fafafa;
+}
+
+main {
+  padding: 7em 3.5em 7em 3.5em;
+}
+
+.text {
+  line-height: 1rem;
+}
+
+.text p:nth-child(1) {
+  font-size: 1.7rem;
+  color: #4c4e61;
+  font-weight: 200;
+}
+
+.text p:nth-child(2) {
+  font-size: 1.85rem;
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+.text p:nth-child(3) {
+  color: #a3a5ae;
+  line-height: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 5em;
+}
+
+.card {
+  margin-bottom: 2em;
+  border-radius: 10px;
+  padding: 1.5em 2em 1.5em 2em;
+  background: white;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.card span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.9375rem;
+  font-weight: 200;
+  color: #a3a5ae;
+}
+
+.card .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.s {
+  border-top: 5px solid #45d3d3;
+}
+
+.t {
+  border-top: 5px solid #ea5353;
+}
+
+.k {
+  border-top: 5px solid #fcaf4a;
+}
+
+.c {
+  border-top: 5px solid #549ef2;
+}
+
+@media (max-width: 600px) {
+  .text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .cardContainers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cardContainers .s {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .cardContainers .t {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .cardContainers .k {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .cardContainers .c {
+    -ms-flex-negative: 3;
+        flex-shrink: 3;
+  }
+}
+
+@media (min-width: 1142px) {
+  main {
+    padding: 5em 10em 0em 10em;
+  }
+  .text {
+    text-align: center;
+  }
+  .cardContainers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3em 1fr 3em 1fr;
+        grid-template-columns: 1fr 3em 1fr 3em 1fr;
+    -ms-grid-rows: 1fr 1em 1fr;
+        grid-template-rows: 1fr 1em 1fr;
+  }
+  .card p {
+    max-width: 23em;
+  }
+  .card .img {
+    margin-top: 3em;
+  }
+  .s {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .t {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+  }
+  .k {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    -ms-grid-row: 3;
+    grid-row: 3/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .c {
+    -ms-grid-column: 5;
+    grid-column: 5 / 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */
