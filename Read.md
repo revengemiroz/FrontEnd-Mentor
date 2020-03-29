@@ -2,11 +2,12 @@ Github Page
 
 ```[]. Connect and display all the github repo```
 
+Add to github steps
 
-
-
-
-
+1. To add folders
+    ```git add Github```
+    ```git commit -m 'added this folder name with this changes```
+    ```git push -u origin master```
 
 
 
