@@ -7,17 +7,22 @@ const projects = [
 ]
 
 const containerEl = document.querySelector('.container')
+let i = 0
 
-const display = () => {
+const display = (id) => {
     projects.forEach(project => {
         const CardHtml = `
          <div class='card'>
             <a href="/${project.name}/index.html">
             <img src='/${project.name}/design/desktop-preview.jpg'></img>
-            ${project.name}
+            <p class='title'>${id + 1}.  ${project.name}<p>
             </a>
+            
             <div class='socials'>
-            <i class='fab fa-instagram'></i>
+            <a href='https://www.instagram.com/mirozuzamaki/?hl=en'> 
+            <i class='fab fa-instagram fa-3x'></i>
+            </a>
+           
             
             </div>
           </div>`
@@ -26,7 +31,7 @@ const display = () => {
     })
 }
 
-display()
+display(i)
 
 
 
