@@ -29,7 +29,7 @@ height: 100vh;
 .card img{
     width: 400px;
     height: 300px;
-    border: 2px solid green;
+   
 }
 
 .card > .socials{
