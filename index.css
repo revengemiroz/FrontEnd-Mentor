@@ -14,7 +14,8 @@ height: 100vh;
 
 .card{
     margin-top: 5em;
-   
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
