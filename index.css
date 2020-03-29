@@ -14,8 +14,6 @@ height: 100vh;
 
 .card{
     margin-top: 5em;
-    width: 100px;
-    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +26,12 @@ height: 100vh;
     
 }
 
+.card img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid green;
+}
+
 .card > .socials{
     margin-top: 2em;
     height: 50px;
@@ -37,12 +41,4 @@ height: 100vh;
     align-items: center;
 }
 
-.fab{
-    width: 100%;
-    
-}
 
-.card > img{
-    width: 100px;
-    height: 100px;
-}
