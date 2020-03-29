@@ -16,6 +16,10 @@ const display = () => {
             <img src='/${project.name}/design/desktop-preview.jpg'></img>
             ${project.name}
             </a>
+            <div class='socials'>
+            <i class='fab fa-youtube'></i>
+            asdasd
+            </div>
           </div>`
 
         containerEl.innerHTML = CardHtml
@@ -23,3 +27,16 @@ const display = () => {
 }
 
 display()
+
+
+
+
+
+
+
+
+
+
+
+
+//output https://epic-sinoussi-268bd1.netlify.com/
