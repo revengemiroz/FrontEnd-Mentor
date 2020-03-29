@@ -17,8 +17,8 @@ const display = () => {
             ${project.name}
             </a>
             <div class='socials'>
-            <i class='fab fa-youtube'></i>
-            asdasd
+            <i class='fab fa-instagram'></i>
+            
             </div>
           </div>`
 
