@@ -43,6 +43,7 @@ h1{
     top: 70px;
     padding: 0.3em;
     color: #3443bd;
+    cursor: default;
 }
 
 .projects:hover{
@@ -51,6 +52,7 @@ h1{
 }
 
 .box{
+    
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -58,6 +60,7 @@ h1{
     width: 400px;
     /* border: 2px solid green; */
     margin:5em 1em 1em 1em;
+    box-shadow: 7px 7px 20px #a0a0a0;
 }
 
 .card{
@@ -81,10 +84,11 @@ h1{
 .title{
     font-size: 1.5rem;
     position: absolute;
-    top: -60px;
+    top: -70px;
 }
 
 .imageScale img{
+    margin-top: 1em;
     width: 100%;
     display: block;
     object-fit: cover;
@@ -103,11 +107,17 @@ h1{
     height: 50px;
     width: 350px;
     /* border: 2px solid green; */
+    margin: 0 0 1em 0;
    
 }
 
 i{
     color: black;
+    transition: transform .3s ease;
+}
+
+i:hover{
+    transform: scale(1.2);
 }
 
 
