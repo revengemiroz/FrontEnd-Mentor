@@ -71,12 +71,12 @@ span{
     width: 100%;
     display: block;
     object-fit: cover;
-    transition: transform .5s ease;
+    transition: transform .3s ease;
     /* border: 2px solid green; */
 }
 
 .imageScale:hover img{
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 .card > .socials{
