@@ -1,7 +1,12 @@
 const projects = [
     {
         name: 'four-card-feature-section',
-        github: '',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/four-card-feature-section',
+        instagram: ''
+    },
+    {
+        name: 'pricing-component-with-toggle',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/pricing-component-with-toggle',
         instagram: ''
     }
 ]
