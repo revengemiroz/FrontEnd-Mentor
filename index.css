@@ -16,21 +16,38 @@ body{
    
 }
 
-h1{
-    margin-top: 1em;
-    
-}
-
-span{
-    color: #3443bd;
-}
-
 .container{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 3em;
+    
+}
+
+h1{
+    margin-top: 1em;
+    
+}
+
+.right{
+    color: #3443bd;
+}
+
+.projects{
+    margin-top: 2em;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+    padding: 0.3em;
+    color: #3443bd;
+}
+
+.projects:hover{
+    border-right: 3px dashed #e92b48;
+    border-bottom: 3px dashed #e92b48;
 }
 
 .box{
