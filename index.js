@@ -1,13 +1,13 @@
 const projects = [
     {
         name: 'four-card-feature-section',
-        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/four-card-feature-section',
-        instagram: ''
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/four-card-feature-section'
+
     },
     {
         name: 'pricing-component-with-toggle',
-        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/pricing-component-with-toggle',
-        instagram: ''
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/pricing-component-with-toggle'
+
     }
 ]
 
@@ -36,7 +36,7 @@ const display = () => {
             
             </a>
 
-            <a href='https://www.instagram.com/mirozuzamaki/?hl=en'> 
+            <a href=${project.github}> 
             <i class='fab fa-github fa-3x'></i>
             
             </a>
