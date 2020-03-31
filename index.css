@@ -68,7 +68,9 @@ span{
 }
 
 .imageScale img{
-    top: 0;
+    width: 100%;
+    display: block;
+    object-fit: cover;
     transition: transform .5s ease;
     /* border: 2px solid green; */
 }
