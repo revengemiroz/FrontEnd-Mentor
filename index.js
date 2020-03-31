@@ -32,7 +32,7 @@ const display = (id) => {
             </div>
           </div>`
 
-        containerEl.innerHTML = CardHtml
+        containerEl.innerHTML += CardHtml
     })
 }
 
