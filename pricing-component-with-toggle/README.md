@@ -1,3 +1,8 @@
+# Working link :
+
+https://epic-sinoussi-268bd1.netlify.com/pricing-component-with-toggle/index.html
+
+
 # Frontend Mentor - File Transfer pricing component
 
 ![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)
