@@ -83,7 +83,6 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1em;
     height: 50px;
     width: 350px;
     /* border: 2px solid green; */
