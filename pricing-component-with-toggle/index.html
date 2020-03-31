@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="./css/index1.css">
+
+
+</head>
+
+<body>
+  <img src="./images/bg-top.svg" class="top-svg" alt="" srcset="">
+  <img src="./images/bg-bottom.svg" class='bottom-svg' alt="" srcset="">
+
+  <span class="title">Our Pricing</span>
+
+  <div class="timeToggle">
+    <span>Annually</span>
+
+    <span>
+      <input type="checkbox" name="toggle" id="toggle" unchecked />
+      <label for="toggle">
+        <div class="ball"></div>
+      </label>
+    </span>
+
+    <span>Monthly</span>
+
+  </div>
+
+  <div class="container">
+
+
+    <!--basic card-->
+    <div class="card basic">
+
+      <p>Basic</p>
+
+      <div class="price">
+        <span>&dollar;</span>
+        <span id="basic" class="pricing monthly"> 199.99</span>
+
+      </div>
+
+      <span class="desc">500 GB Storage</span>
+      <span class="desc">2 Users Allowed</span>
+      <span class="desc last">Send up to 3 GB</span>
+
+      <button>Learn More</button>
+
+    </div>
+
+
+    <!--professional card-->
+    <div class="card professional selected">
+
+      <p>Professional</p>
+
+      <div class="price">
+        <span>&dollar;</span>
+        <span id="prof" class="pricing"> 249.99</span>
+      </div>
+
+
+      <span class="desc">1 TB Storage</span>
+      <span class="desc">5 Users Allowed</span>
+      <span class="desc last">Send up to 10 GB</span>
+
+      <button class="button selected">Learn More</button>
+    </div>
+
+
+
+
+
+    <!--Master card-->
+    <div class="card master">
+
+      <p>Master</p>
+
+      <div class="price">
+        <span>&dollar;</span>
+        <span id="master" class="pricing"> 399.99</span>
+      </div>
+
+      <span class="desc">2 TB Storage</span>
+      <span class="desc">10 Users Allowed</span>
+      <span class="desc last">Send up to 20 GB</span>
+
+      <button>Learn More</button>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>

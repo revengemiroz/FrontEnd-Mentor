@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--Very-Light-Grayish-Blue);
+    display: flex;
+    width: 375px;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat';
+    
+}
+
+.top-svg{
+    position: absolute;
+    top: -40px;
+    right: -205px;
+    height: 670px;
+    z-index: -1;
+}
+
+.title{
+    color: #616277;
+    font-weight: 900;
+    margin: 2em 0 1.2em 0;
+    font-size: 2rem;
+}
+
+.timeToggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 5em 0;
+}
+
+.timeToggle > span{
+    color: var(--Light-Grayish-Blue);
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    margin: 0 2em 0 2em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px 0 0 0;
+    width: 90%;
+    margin: 1em 0 1em 0;
+    box-shadow: 5px 3px 18px -2px var(--Light-Grayish-Blue);
+}
+
+
+
+.card.master,.card.basic{
+    background-color: white;
+}
+
+.card.professional{
+    background-image:linear-gradient(to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+
+.card.professional span:nth-child(n+1){
+    color: white;
+}
+
+.card.selected > span, .card.selected > p{
+    color: white;
+}
+
+
+ p:nth-child(1){
+    font-weight: bolder;
+    margin: 0 0 1em 0;
+    font-size: 1.2em;
+    color: var(--Grayish-Blue);
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2em 0 ;
+}
+
+.price > span:first-child{
+    margin-right:0.2em;
+    font-weight: 900;
+    font-size:2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.pricing{
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.desc{
+    text-align: center;
+    font-weight: 900;
+    margin: 0.7em 0 1.7em 0;
+    color: var(--Grayish-Blue); 
+    position: relative;
+    width: 80%;
+}
+
+.desc:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+}
+
+.desc.last:after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: -20px;
+    border-top: 1px solid #dcdcdc;
+}
+
+button{
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-image:linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 2em 0 2em 0;
+    width: 80%;
+    padding: 1.4em 0 1.4em 0;
+}
+
+.card.professional > button{
+    color: #7377e2;
+    background-image: linear-gradient(to right, #ffffff,#ffffff);
+}
+
+.toggle{
+    background-image:linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    top: -5px;
+    border-radius: 30px;
+    width: 60px;
+    height: 30px;
+    position: relative;
+}
+
+.circle{
+    border-radius: 50px;
+    top: 4px;
+    left: 4px;
+    background-color: white;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    animation: a 1s ease-in-out;
+}
+
+@keyframes slide{
+    from{
+        left: 3px;
+    }   
+    to{
+        left: 32px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+	
+    body{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row;
+       height: 100vh;
+    }
+
+	
+}

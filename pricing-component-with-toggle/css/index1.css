@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+:root{
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7f7ff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+
+.title{
+    color: #616277;
+    font-weight: 900;
+    margin: 2em 0 1.2em 0;
+    font-size: 2rem;
+}
+
+.timeToggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 5em 0;
+}
+
+.timeToggle > span{
+    color: var(--Light-Grayish-Blue);
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    margin: 0 2em 0 2em;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px 0 0 0;
+    margin: 1em -0.5em 1em -0.5em;
+    box-shadow: 5px 3px 18px -2px var(--Light-Grayish-Blue);
+    height: 480px;
+}
+
+.container > .card.selected{
+    color: white;
+    position: relative;
+    top: -20px;
+    height: 33em;
+    background-image:linear-gradient(to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));   
+}
+
+
+.card.professional{
+    background-image:linear-gradient(to bottom, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+
+.card.professional span:nth-child(n+1){
+    color: white;
+}
+
+.card.selected > span, .card.selected > p{
+    color: white;
+}
+
+.card.basic,.card.master,.card.selected{
+    width: 400px;
+    background-color: white;
+}
+
+p:nth-child(1){
+    font-weight: bolder;
+    margin: 0 0 1em 0;
+    font-size: 1.2em;
+    color: var(--Grayish-Blue);
+}
+
+.card.professional {
+    padding-top: 3.5em;
+}
+
+.card.professional > button{
+    color: #7377e2;
+    background-image: linear-gradient(to right, #ffffff,#ffffff);
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2em 0 ;
+}
+
+.price > span:first-child{
+    margin-right:0.2em;
+    font-weight: 900;
+    font-size:2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.pricing{
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.desc{
+    text-align: center;
+    font-weight: 900;
+    margin: 0.7em 0 1.7em 0;
+    color: var(--Grayish-Blue); 
+    position: relative;
+    width: 80%;
+}
+
+.desc:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+}
+
+.desc.last:after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: -20px;
+    border-top: 1px solid #dcdcdc;
+}
+
+
+.bottom-svg{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.top-svg{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+button{
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    background-image:linear-gradient(to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 2em 0 2em 0;
+    width: 80%;
+    padding: 1.4em 0 1.4em 0;
+}
+
+/* Pill toggle */
+.timeToggle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.timeToggle label {
+	background-image: linear-gradient(
+		to right,
+		hsl(236, 72%, 79%),
+		hsl(237, 63%, 64%)
+	);
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+	height: 30px;
+	width: 60px;
+}
+
+.timeToggle label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+	height: 25px;
+	width: 25px;
+	transition: transform 0.4s ease;
+}
+
+.timeToggle input {
+	position: absolute;
+	left: -9999px;
+}
+
+.timeToggle input:checked + label .ball {
+	transform: translateX(30px);
+}
+
+
+@media screen and (max-width:450px){
+    .card.basic,.card.professional,.card.master{
+        width: 330px;
+    }
+
+    .card.professional{
+        margin: 2.2em 0 0em 0;
+    }
+
+    .top-svg{
+        position: absolute;
+        top: -40px;
+        right: -190px;
+        height: 670px;
+        z-index: -1;
+    }
+    
+    .bottom-svg{
+        display: none;
+    }
+}
+
+@media screen and (min-width:450px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card.basic,.card.professional,.card.master{
+        width: 270px;
+    }
+
+    .card.professional{
+        margin: 2.2em 0 0em 0;
+        left: -6px;
+    }
+
+    .bottom-svg{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1080px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card.basic,.card.professional,.card.master{
+        width: 390px;
+    }
+
+    .card.professional{
+        margin-top:15px;
+    }
+
+    .bottom-svg{
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (max-width:1180px){
+
+    .card.basic,.card.master,.card.selected{
+        width: 350px;
+        background-color: white;
+    }
+    
+    .bottom-svg{
+        display: block;
+    }
+
+}
+
+
+
