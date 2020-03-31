@@ -12,31 +12,52 @@ const projects = [
 ]
 
 const containerEl = document.querySelector('.container')
-let i = 0
 
-const display = (id) => {
-    projects.forEach(project => {
+
+const display = () => {
+    projects.forEach((project, index) => {
+        const boxEl = document.createElement('li')
+        boxEl.classList.add('box')
+
         const CardHtml = `
          <div class='card'>
+
+            <div class='imageScale'>
+
             <a href="/${project.name}/index.html">
-            <img src='/${project.name}/design/desktop-preview.jpg'></img>
-            <p class='title'>${id + 1}.  ${project.name}<p>
-            </a>
-            
+            <img src='/${project.name}/design/desktop-preview.jpg'></img>            </a>
+               
+            </div>
+            <p class='title'>${index + 1}.  ${formatNames(project.name)}<p>
+         
             <div class='socials'>
             <a href='https://www.instagram.com/mirozuzamaki/?hl=en'> 
             <i class='fab fa-instagram fa-3x'></i>
+            
             </a>
-           
+
+            <a href='https://www.instagram.com/mirozuzamaki/?hl=en'> 
+            <i class='fab fa-github fa-3x'></i>
+            
+            </a>
             
             </div>
           </div>`
 
-        containerEl.innerHTML += CardHtml
+        boxEl.innerHTML = CardHtml
+        containerEl.appendChild(boxEl)
     })
 }
 
-display(i)
+const formatNames = (n) => {
+    return n.split('-').map(word => word[0].toUpperCase() + word.slice(1))
+        .join(' ')
+
+}
+
+
+
+display()
 
 
 
