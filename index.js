@@ -10,7 +10,7 @@ const projects = [
 
     },
     {
-        name: ' base-apparel-coming-soon',
+        name: 'base-apparel-coming-soon',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/base-apparel-coming-soon'
 
     }
