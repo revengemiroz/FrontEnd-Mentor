@@ -8,7 +8,13 @@ const projects = [
         name: 'pricing-component-with-toggle',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/pricing-component-with-toggle'
 
+    },
+    {
+        name: ' base-apparel-coming-soon',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/base-apparel-coming-soon'
+
     }
+
 ]
 
 const containerEl = document.querySelector('.container')
