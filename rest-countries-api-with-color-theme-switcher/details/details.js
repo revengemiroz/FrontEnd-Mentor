@@ -36,7 +36,7 @@ window.onload = () => {
         </div>
         <div class="info2-details">
             <p><strong>Top Level Domain:</strong> ${country.topLevelDomain}</p>
-            <p><strong>Currencies:</strong> ${displayArray(country.currencies)}</p>
+            <p><strong>Currencies:</strong> ${(country.currencies[0].symbol)}, ${displayArray(country.currencies)}</p>
             <p><strong>Languages:</strong> ${displayArray(country.languages)}</p>
         </div>
     `;

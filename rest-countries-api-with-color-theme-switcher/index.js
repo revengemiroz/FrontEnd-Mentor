@@ -1,24 +1,25 @@
-window.onload = () => {
-    //set dark mode
 
-    if (localStorage.getItem('dark-mode')) {
-        if (localStorage.getItem('dark-mode') == 'false') {
-            localStorage.setItem('dark-mode', 'true')
-        }
-        else {
-            localStorage.setItem('dark-mode', 'false')
-        }
-        performModeState()
+//set dark mode
+
+if (localStorage.getItem('dark-mode')) {
+    if (localStorage.getItem('dark-mode') == 'false') {
+        localStorage.setItem('dark-mode', 'true')
     }
     else {
         localStorage.setItem('dark-mode', 'false')
     }
-
+    performModeState()
 }
+else {
+    localStorage.setItem('dark-mode', 'false')
+}
+
+
 let firstRender = true
 
 
 async function displayCountries(url) {
+
 
     document.querySelector('main').innerHTML = `
     <div class='loader'>
@@ -74,8 +75,8 @@ async function displayCountries(url) {
                 document.querySelectorAll('.card')[i].classList.add('dark-mode')
             }
         }
-
         firstRender = false
+
         clickCountry(data)
     }
     catch (err) {
