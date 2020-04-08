@@ -47,7 +47,7 @@ async function displayCountries(url) {
 
             //html content for homepage cards
             const cardsOutput = `
-        <h4>${country.name}</h4>
+        <h2>${country.name}</h2>
         <p><strong>Population :</strong> ${numberWithCommas(country.population)}
         <p><strong>Regoin : </strong>${country.region}</p>
         <p><strong>Capital : </strong>${country.capital}</p>`
