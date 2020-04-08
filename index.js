@@ -13,8 +13,12 @@ const projects = [
         name: 'base-apparel-coming-soon',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/base-apparel-coming-soon'
 
-    }
+    },
+    {
+        name: 'rest-countries-api-with-color-theme-switcher',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/rest-countries-api-with-color-theme-switcher'
 
+    }
 ]
 
 const containerEl = document.querySelector('.container')
