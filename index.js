@@ -18,7 +18,13 @@ const projects = [
         name: 'rest-countries-api-with-color-theme-switcher',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/rest-countries-api-with-color-theme-switcher'
 
+    },
+    {
+        name: 'single-price-grid-component',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/single-price-grid-component'
+
     }
+
 ]
 
 const containerEl = document.querySelector('.container')
