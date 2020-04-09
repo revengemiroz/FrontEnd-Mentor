@@ -10,33 +10,35 @@
 </head>
 
 <body>
+    <div class="sticky">
+        <nav>
+            <h2>Where in the world?</h2>
+            <div id="dark">
+                <i class="fas fa-moon"></i>
+                Dark Mode
+            </div>
+        </nav>
 
-    <nav>
-        <h2>Where in the world?</h2>
-        <div id="dark">
-            <i class="fas fa-moon"></i>
-            Dark Mode
-        </div>
-    </nav>
+        <form id="form">
+            <div>
+                <i class="fas fa-search"></i>
+                <datalist id="searching"></datalist>
+                <input type="text" list="searching" class="search" placeholder="Search for a country...">
+            </div>
 
-    <form>
-        <div>
-            <i class="fas fa-search"></i>
-            <datalist id="searching"></datalist>
-            <input type="text" list="searching" class="search" placeholder="Search for a country...">
-        </div>
+            <div>
+                <datalist id="regions">
+                    <option value="Africa"></option>
+                    <option value="Americas"></option>
+                    <option value="Asia"></option>
+                    <option value="Europe"></option>
+                    <option value="Oceania"></option>
+                </datalist>
+                <input class="region" placeholder="Filter by Region" type="text" list="regions">
+            </div>
+        </form>
 
-        <div>
-            <datalist id="regions">
-                <option value="Africa"></option>
-                <option value="America"></option>
-                <option value="Asia"></option>
-                <option value="Europe"></option>
-                <option value="Oceania"></option>
-            </datalist>
-            <input class="region" placeholder="Filter by Region" type="text" list="regions">
-        </div>
-    </form>
+    </div>
 
     <main>
 

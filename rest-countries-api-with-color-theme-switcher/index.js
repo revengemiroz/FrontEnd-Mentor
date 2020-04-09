@@ -16,7 +16,7 @@ else {
 
 
 let firstRender = true
-
+document.getElementById("form").disabled = true;
 
 async function displayCountries(url) {
 
@@ -28,8 +28,6 @@ async function displayCountries(url) {
     `
 
     try {
-
-
         const res = await fetch(url)
         const data = await res.json()
 
@@ -135,6 +133,8 @@ document.getElementById('dark').addEventListener('click', () => {
 })
 
 function performModeState() {
+
+    //dark mode
     if (localStorage.getItem('dark-mode') == 'false') {
         document.body.classList.add('body-dark-mode')
         document.querySelector('nav').classList.add('dark-mode')
@@ -149,6 +149,7 @@ function performModeState() {
 
         localStorage.setItem('dark-mode', 'true')
     }
+    //light mode
     else {
         document.body.classList.remove('body-dark-mode')
         document.querySelector('nav').classList.remove('dark-mode')
