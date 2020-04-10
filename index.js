@@ -23,6 +23,10 @@ const projects = [
         name: 'single-price-grid-component',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/single-price-grid-component'
 
+    },
+    {
+        name: 'huddle-landing-page-with-single-introductory-section',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/huddle-landing-page-with-single-introductory-section'
     }
 
 ]
