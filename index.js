@@ -27,6 +27,10 @@ const projects = [
     {
         name: 'huddle-landing-page-with-single-introductory-section',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/huddle-landing-page-with-single-introductory-section'
+    },
+    {
+        name: 'ping-coming-soon-page',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/ping-coming-soon-page'
     }
 
 ]
