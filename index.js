@@ -44,29 +44,35 @@ const display = () => {
         boxEl.classList.add('box')
 
         const CardHtml = `
-         <div class='card'>
-
-            <div class='imageScale'>
-
-            <a href="/${project.name}/index.html">
-            <img src='/${project.name}/design/desktop-preview.jpg'></img>            </a>
-               
-            </div>
-            <p class='title'>${index + 1}.  ${formatNames(project.name)}<p>
          
-            <div class='socials'>
-            <a href='https://www.instagram.com/mirozuzamaki/?hl=en'> 
-            <i class='fab fa-instagram fa-3x'></i>
-            
-            </a>
+            <div class="c-subscribe-box u-align-center">
+                    <div class="rainbow"><span></span><span></span></div>
+                    <div class="c-subscribe-box__wrapper">
+                            <a href="/${project.name}/index.html">
+                                <img src='/${project.name}/design/desktop-preview.jpg'></img> 
+                            </a>
+                        <h3 class="c-subscribe-box__title">${index + 1}.  ${formatNames(project.name)}</h3>
 
-            <a href=${project.github}> 
-            <i class='fab fa-github fa-3x'></i>
-            
-            </a>
-            
+                                                    
+                    </div>
+                    <div class="links">
+                                    <ul>
+                                    <li><a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                        </a></li>
+
+                                    <li><a href=${project.github}>
+                                        <i class="fab fa-github"></i>
+                                        </a></li>
+
+                                    <li><a href="">
+                                        <i class="fab fa-instagram"></i>
+                                        </a></li>
+                                    </ul>
+                                </div>
             </div>
-          </div>`
+            
+          `
 
         boxEl.innerHTML = CardHtml
         containerEl.appendChild(boxEl)
@@ -85,7 +91,26 @@ display()
 
 
 
+// <div class='imageScale'>
 
+// <a href="/${project.name}/index.html">
+// <img src='/${project.name}/design/desktop-preview.jpg'></img>            </a>
+
+// </div>
+// <p class='title'>${index + 1}.  ${formatNames(project.name)}<p>
+
+// <div class='socials'>
+// <a href='https://www.instagram.com/mirozuzamaki/?hl=en'> 
+// <i class='fab fa-instagram fa-3x'></i>
+
+// </a>
+
+// <a href=${project.github}> 
+// <i class='fab fa-github fa-3x'></i>
+
+// </a>
+
+// </div>
 
 
 
