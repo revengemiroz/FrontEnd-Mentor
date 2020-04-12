@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
     --color-first: #65587f;
@@ -32,7 +33,7 @@
 }
 
 h1{
-    font-family: var(--font-special);
+    font-family: 'Montserrat';
     color: var(--color-second);
 }
 
