@@ -17,9 +17,35 @@ close.addEventListener('click', () => {
     modal.classList.remove('show');
 });
 
+//close modal when clicked outside the the modal
+document.onclick = (e) => {
+    if (e.target.classList.contains('modal-container')) {
+        video.innerHTML = `<video class="video" width="320" height="240">
+        <source
+            src="Jack-Black.mp4"
+            type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>`
+        modal.classList.remove('show');
+    }
+}
 
+//close modal when clicked escape button
+document.onkeydown = (e) => {
+    if (e.key == 'Escape') {
+        console.log('close')
+        video.innerHTML = `<video class="video" width="320" height="240">
+            <source
+                src="Jack-Black.mp4"
+                type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>`
+        modal.classList.remove('show');
 
-
+    }
+}
 
 const projects = [
     {
@@ -54,7 +80,13 @@ const projects = [
     {
         name: 'ping-coming-soon-page',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/ping-coming-soon-page'
+    },
+    {
+        name: 'social-media-dashboard-with-theme-switcher',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/social-media-dashboard-with-theme-switcher'
     }
+
+
 
 ]
 
@@ -102,6 +134,7 @@ const display = () => {
     })
 }
 
+
 const formatNames = (n) => {
     return n.split('-').map(word => word[0].toUpperCase() + word.slice(1))
         .join(' ')
@@ -129,6 +162,7 @@ var keyHandler = function (event) {
     if (pattern.length === current) {
         current = 0;
         modal.classList.add('show');
+
         video.innerHTML = `<video autoplay class="video" width="320" height="240" loop>
         <source
             src="Jack-Black.mp4"
@@ -138,10 +172,12 @@ var keyHandler = function (event) {
     </video>`
     }
 
+
 };
 
 // Listen for keydown events
 document.addEventListener('keydown', keyHandler, false);
+
 
 
 // <div class='imageScale'>
