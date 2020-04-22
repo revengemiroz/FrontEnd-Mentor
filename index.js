@@ -84,8 +84,11 @@ const projects = [
     {
         name: 'social-media-dashboard-with-theme-switcher',
         github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/social-media-dashboard-with-theme-switcher'
+    },
+    {
+        name: 'intro-component-with-signup-form',
+        github: 'https://github.com/revengemiroz/FrontEnd-Mentor/tree/master/intro-component-with-signup-form'
     }
-
 
 
 ]
