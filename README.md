@@ -1,6 +1,6 @@
 Working Link
 
-https://epic-sinoussi-268bd1.netlify.com/
+https://mirozdevkota.netlify.com/
 
 Github Page
 
